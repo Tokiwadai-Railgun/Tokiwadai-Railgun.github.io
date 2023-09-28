@@ -1,5 +1,3 @@
-Projets
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +15,77 @@ Projets
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../styles.css" />
-    <title>À Propos</title>
+    <title>Arthur Deuez - - Scheidbach - À Propos</title>
 </head>
 <body class="light" id="top">
-    <!-- Affichage des projets sous forme de cartes, explication simple au premier abord puis téléchargement d'un compte rendue plus
-    détaillé de la chose avec un simple boutton, lien viers github pour le code source si possible et liens vers exemle si possible également-->
+    <!-- Header -->
+    <header class="header center">
+        <h3>
+          <a href="https://Tokiwadai-Railgun.github.io" class="link">A DS.</a>
+        </h3>
+  
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="pages/about.html">À Propos</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="link link--nav" href="pages/projets.html">Projets</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="link link--nav" href="pages/veille.html">Veille</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="link link--nav" href="#contact">Contact</a>
+            </li>
+  
+  
+          </ul>
+  
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+          </button>
+  
+          <button
+            type="button"
+            aria-label="toggle navigation"
+            class="btn btn--icon nav__hamburger"
+          >
+            <i aria-hidden="true" class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </header>
+    
+    
+    <!-- Doit expliquer clairement qui je suis, on met des mots important en gras et on les modifie -->
 
+    <!-- Présentation -->
+    <main>
+      <div class="about">
+        <h2> Qui suis-je </h2>
+        <p class="description"> Sortant d'un bac générale spécialitées Mathématiques et SVT je me suis dirigé vers un <span>BTS SIO option SLAM</span> par passion. Depuis longtemps intéressé par le monde de l'informatique et particulièrement du développement j'ai réalisé quelques projets personnels avant et en parrallels de la formations me permettant de développer des compétences en JavaScrypt (avec Node.js) majoritairement accompagné de C++ d'HTML et CSS</p>
+      </div>
+
+      <!-- Compétences -->
+      <div class="competences">
+        <h2> Compétences </h2>
+        
+        <div class="skills__bars">
+          <div class="bar">
+            <div class="info"><span>Javascript</span></div>
+            <div class="progress__line js"><span></span></div>
+          </div>
+        </div>
+
+        <!-- HTML-->
+      </div>
+    </main>
+
+      <footer>
+
+
+        
+      </footer>
+      <script src="../script.js"> </script>
 </body>
 </html>

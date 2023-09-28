@@ -268,6 +268,12 @@ main {
   max-width: 600px;
 }
 
+.description {
+  font-size: 1rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
@@ -335,6 +341,106 @@ main {
 .skills__list-item {
   margin: 0.5em;
 }
+
+.skills__bars {
+  width: 600px;
+  background-color: var(--clr-bg);
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills__bars .bar {
+  margin: 20px 0px;
+}
+
+.skills__bars .bar:first-child {
+  margin-top: 0px;
+}
+
+.skills__bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.skills__bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skills__bars .bar .progress__line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: var(--clr-fg);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress__line span{
+	height: 100%;
+	width: 80%;
+	background: var(--clr-primary);
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress__line.js span {
+  width: 20%;
+}
+
+.bar .progress__line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:#000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+
+
+.bar .progress__line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+/* Faire une display flex pour les téléphone et adapter en grid pour ordinateur*/
 
 .contact {
   flex-direction: column;
