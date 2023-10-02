@@ -26,15 +26,18 @@ body {
   background-color: var(--clr-bg);
 }
 
+
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  /* --clr-primary: #2978b5; */
+  --clr-primary: #9d49d1;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/* 
 .dark {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
@@ -44,7 +47,17 @@ body {
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+*/ 
 
+.dark {
+  --clr-bg: #211b22;
+  --clr-bg-alt : #363037;
+  --clr-fg: #949194;
+  --clr-fg-alt:  white;
+  --clr-primary: #dbabe1 ;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 ::-moz-selection {
   background: var(--clr-primary);
   color: var(--clr-bg);
@@ -343,7 +356,9 @@ main {
 }
 
 .skills__bars {
-  width: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 1200px;
   background-color: var(--clr-bg);
   border-radius: 10px;
   padding: 25px 30px;
@@ -405,6 +420,17 @@ main {
 }
 
 .progress__line.js span {
+  grid-column-start: 1;
+  width: 20%;
+}
+
+.progress__line.html span {
+  grid-column-start: 2;
+  width: 10%;
+}
+
+.progress__line.maths span {
+  grid-column-start:  1;
   width: 20%;
 }
 
