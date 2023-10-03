@@ -358,20 +358,19 @@ main {
 .skills__bars {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 1200px;
+  width: 90%;
   background-color: var(--clr-bg);
   border-radius: 10px;
   padding: 25px 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Appliquer une limite de taille*/ 
+
 .skills__bars .bar {
-  margin: 20px 0px;
+  margin: 20px 10px;;
 }
 
-.skills__bars .bar:first-child {
-  margin-top: 0px;
-}
 
 .skills__bars .bar .info {
   margin-bottom: 5px;
