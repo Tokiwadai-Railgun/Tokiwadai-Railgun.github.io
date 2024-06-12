@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.3551db12.js";import{g as t}from"./skills.a773b369.js";import{C as n}from"./types.3287c81b.js";const r=[{slug:"system-analyst",company:"Insead",description:`Fondée en 1957, l'INSEAD est une école de commerce internationale de premier plan, offrant une éducation de qualité supérieure à travers ses campus situés en Europe (Fontainebleau, France), en Asie (Singapour) et au Moyen-Orient (Abu Dhabi)
+import{A as e}from"./UIcon.c52c2ad7.js";import{g as t}from"./skills.56ef6e80.js";import{C as n}from"./types.3287c81b.js";const r=[{slug:"system-analyst",company:"Insead",description:`Fondée en 1957, l'INSEAD est une école de commerce internationale de premier plan, offrant une éducation de qualité supérieure à travers ses campus situés en Europe (Fontainebleau, France), en Asie (Singapour) et au Moyen-Orient (Abu Dhabi)
 
 Au sein du service IT je participe à divers projets technologiques comme l'intégration de lociels interns et contribue à la gestion et à l'amélioration des systèmes informatiques.
 
