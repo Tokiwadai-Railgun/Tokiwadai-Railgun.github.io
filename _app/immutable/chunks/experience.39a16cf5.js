@@ -1,0 +1,5 @@
+import{A as e}from"./UIcon.e9759419.js";import{g as t}from"./skills.2eb49441.js";import{C as n}from"./types.3287c81b.js";const r=[{slug:"system-analyst",company:"Insead",description:`Fondée en 1957, l'INSEAD est une école de commerce internationale de premier plan, offrant une éducation de qualité supérieure à travers ses campus situés en Europe (Fontainebleau, France), en Asie (Singapour) et au Moyen-Orient (Abu Dhabi)
+
+Au sein du service IT je participe à divers projets technologiques comme l'intégration de lociels interns et contribue à la gestion et à l'amélioration des systèmes informatiques.
+
+Cette expérience enrichit mes compétences pratiques en informatique et me permet de travailler dans un environnement dynamique et exigeant.`,contract:n.Alternance,type:"Software Development",location:"Fontainebleau",period:{from:new Date(2023,4,10)},skills:t(""),name:"System Analyst",color:"lightgreen",links:[],logo:e.Insead,shortDescription:"Membre de l'équipe IT de l'Insead"}],a="Experience";export{r as i,a as t};
