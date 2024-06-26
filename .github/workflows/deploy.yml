@@ -18,6 +18,9 @@ jobs:
       - name: Connect to database
         run: echo "Database password is ${{ secrets.DATABASE_PASSWORD }}"
 
+      - name: Check jwt token
+        run: echo "JWT secret token is ${{ secrets.SECRET_KEY_TOKEN }}"
+
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           yarn install --immutable --immutable-cache --check-cache
